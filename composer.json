@@ -1,0 +1,17 @@
+{
+    "name": "dreadlokeur/midi-chlorians-php-skeleton-application",
+    "description": "Application Skeleton for Midi-ChloriansPHP Framework.",
+    "type": "library",
+    "homepage": "https://github.com/dreadlokeur/Midi-ChloriansPHPSkeletonApplication",
+    "license": "GPLv3",
+    "authors": [
+        {
+            "name": "dreadlokeur",
+            "email": "dreadlokeur@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "dreadlokeur/midi-chlorians-php": "dev-master"
+    }
+}
