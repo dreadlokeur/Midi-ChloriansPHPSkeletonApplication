@@ -1,0 +1,3 @@
+[submodule "vendor/dreadlokeur/midi-chlorians-php"]
+	path = vendor/dreadlokeur/midi-chlorians-php
+	url = git://github.com/dreadlokeur/Midi-ChloriansPHP.git
