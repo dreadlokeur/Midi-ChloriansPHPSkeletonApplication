@@ -32,7 +32,6 @@ $autoloader->setAutoloadExtensions(array(
     'php'
 ));
 $autoloader->addNamespaces(array(
-    'MidiChloriansPHP' => PATH_MIDICHLORIANSPHP,
     'libs' => PATH_LIBS,
     'controllers' => PATH_CONTROLLERS,
     'models' => PATH_MODELS,
