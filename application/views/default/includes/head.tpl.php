@@ -23,7 +23,11 @@
     <!--[if IE]>
             <link rel="stylesheet" href="<?php echo $this->getUrlAsset('css'); ?>no-autoload/ie.css"> 
     <![endif]-->
-    <link href="<?php echo $this->getUrlAsset('lib'); ?>bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <?php if($this->debug) { ?>
+        <link href="<?php echo $this->getUrlAsset('lib'); ?>bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <?php } else { ?>
+        <link href="<?php echo $this->getUrlAsset('lib'); ?>bootstrap/dist/css/bootstrap.min.css?v=<?php echo filemtime($this->getAssetPath('lib').'bootstrap/dist/css/bootstrap.min.css');?>" rel="stylesheet">
+    <?php } ?>
     <style media="screen" type="text/css"><?php echo $this->getCss(); ?></style>
     <?php if (defined('GOOGLE_UA') && !is_null(GOOGLE_UA)) { ?>
     <script type="text/javascript">

@@ -8,7 +8,14 @@
         <a href="http://fr.wikipedia.org/wiki/JavaScript"><img src="<?php echo $this->getUrlAsset('img'); ?>javascript.png" alt="JavaScript" width="88" height="31" /></a>
     </p>
 </footer>
-<script src="<?php echo $this->getUrlAsset('lib'); ?>bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="<?php echo $this->getUrlAsset('lib'); ?>jquery/dist/jquery.min.js"></script>
-<script src="<?php echo $this->getUrlAsset('lib'); ?>jquery.browser/dist/jquery.browser.min.js"></script>
+
+<?php if ($this->debug) { ?>
+    <script src="<?php echo $this->getUrlAsset('lib'); ?>bootstrap/dist/js/bootstrap.js"></script>
+    <script src="<?php echo $this->getUrlAsset('lib'); ?>jquery/dist/jquery.js"></script>
+    <script src="<?php echo $this->getUrlAsset('lib'); ?>jquery.browser/dist/jquery.browser.js"></script>
+<?php } else { ?>
+    <script src="<?php echo $this->getUrlAsset('lib'); ?>bootstrap/dist/js/bootstrap.min.js?v=<?php echo filemtime($this->getAssetPath('lib') . 'bootstrap/dist/js/bootstrap.min.js'); ?>"></script>
+    <script src="<?php echo $this->getUrlAsset('lib'); ?>jquery/dist/jquery.min.js?v=<?php echo filemtime($this->getAssetPath('lib') . 'jquery/dist/jquery.min.js'); ?>"></script>
+    <script src="<?php echo $this->getUrlAsset('lib'); ?>jquery.browser/dist/jquery.browser.min.js?v=<?php echo filemtime($this->getAssetPath('lib') . 'jquery.browser/dist/jquery.browser.min.js'); ?>"></script>
+<?php } ?>
 <script type="text/javascript"><?php echo $this->getJs(); ?></script>

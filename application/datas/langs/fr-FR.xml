@@ -23,6 +23,15 @@
     <e_user_deprecated>alerte d'exécution utilisateur</e_user_deprecated>
     <e_unknown>erreur inconnue</e_unknown>
     <e_exception>exception</e_exception>
+    <e_400>bad request</e_400>
+    <e_401>unauthorized</e_401>
+    <e_403>forbidden</e_403>
+    <e_404>Not Found</e_404>
+    <e_405>Method Not Allowed</e_405>
+    <e_500>Internal Server Error</e_500>
+    <e_502>Bad Gateway</e_502>
+    <e_503>Service Unavailable</e_503>
+    <e_404>Not Found</e_404>
     <!-- debugger template -->
     <debugger_title>oupsss</debugger_title>
     <debugger_header>une erreur s'est produite</debugger_header>
