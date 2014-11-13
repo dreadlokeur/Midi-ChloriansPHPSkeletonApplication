@@ -11,6 +11,28 @@ class Index extends Controller {
 
     public function __construct() {
         $this->tpl->setFile('layouts' . DS . 'base.tpl.php');
+        //for tests
+        //$article = $this->model->factoryRepostery('article')->find(10);
+        //$this->model->delete($article);
+        //$article = $this->model->factoryRepostery('article')->find(10);
+        //$article->title = 'test';
+        //$this->model->save($article);
+        //$article = $this->model->factoryEntity('article');
+        //$article2 = $this->model->factoryEntity('article');
+        //\MidiChloriansPHP\Debugger::dump($article);
+        //\MidiChloriansPHP\Debugger::dump($this->model->countEntities());
+        //$this->model->attach($article);
+        //\MidiChloriansPHP\Debugger::dump($this->model->countEntities());
+        //$this->model->attach($article);
+        //$article->title = 'test';
+        //$this->model->attach($article);
+        //$this->model->attach($article2);
+        //$this->model->delete($article);
+        //\MidiChloriansPHP\Debugger::dump($this->model->delete());
+        //\MidiChloriansPHP\Debugger::dump($this->model->countEntities());
+        //$this->model->flush();
+        //\MidiChloriansPHP\Debugger::dump($article->getRepostery()->getDatabase());
+        //\MidiChloriansPHP\Debugger::dump($article, true);
     }
 
     public function language($language) {
