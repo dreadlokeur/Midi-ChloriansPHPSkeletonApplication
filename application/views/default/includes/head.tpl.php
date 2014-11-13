@@ -13,17 +13,18 @@
     <meta name="Robots" content="index,follow" />
     <link rel="icon" href="<?php echo $this->getUrlAsset('img'); ?>favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="<?php echo $this->getUrlAsset('img'); ?>favicon.ico" type="image/x-icon" />
-    <style media="screen" type="text/css"><?php echo $this->getCss(); ?></style>
     <!--[if lt IE 7]>
             <div class='aligncenter'><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg"border="0"></a></div>  
     <![endif]-->
     <!--[if lt IE 9]>
-            <script src="<?php echo $this->getUrlAsset('js'); ?>no-autoload/html5.js"></script>
-            <script scr="<?php echo $this->getUrlAsset('js'); ?>no-autoload/respond.js"></script>
+            <script src="<?php echo $this->getUrlAsset('lib'); ?>html5shiv/dist/html5shiv.min.js"></script>
+            <script src="<?php echo $this->getUrlAsset('lib'); ?>respond/dest/respond.min.js"></script>
     <![endif]-->
     <!--[if IE]>
             <link rel="stylesheet" href="<?php echo $this->getUrlAsset('css'); ?>no-autoload/ie.css"> 
     <![endif]-->
+    <link href="<?php echo $this->getUrlAsset('lib'); ?>bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style media="screen" type="text/css"><?php echo $this->getCss(); ?></style>
     <?php if (defined('GOOGLE_UA') && !is_null(GOOGLE_UA)) { ?>
     <script type="text/javascript">
         var _gaq = _gaq || [];

@@ -19,6 +19,9 @@ $config = array(
             'module' => array(
                 'directory' => '[PATH_TEMPLATE_DEFAULT_ASSETS]modules[DS]'
             ),
+            'lib' => array(
+                'directory' => '[PATH_TEMPLATE_DEFAULT_ASSETS]bower_components[DS]'
+            ),
             'css' => array(
                 'directory' => '[PATH_TEMPLATE_DEFAULT_ASSETS]css[DS]',
                 'cache' => array(

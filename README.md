@@ -27,3 +27,9 @@ Alternately, clone the repository and manually invoke `composer` using the shipp
 
 (The `self-update` directive is to ensure you have an up-to-date `composer.phar`
 available.)
+
+Using Bower for loading Template (default) dependencies
+----------------------------------------------------
+    npm install -g bower
+    cd my/project/dir/application/views/default/assets/
+    bower install
