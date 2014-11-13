@@ -9,8 +9,6 @@ Vagrantfile
 /application/cache/default/
 /application/config/localhost/
 /application/config/local.dev/
-/application/logs/
-/application/tmp/
 /vendor/autoload.php
 /vendor/ccampbell/
 /vendor/composer/
